@@ -1,16 +1,16 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import Hello from "../components/Hello";
+import Button from "../components/Button";
 ---
 
-<Layout title="Welcome to Astro.">
+<Layout title="kcfuler">
   <main>
-    <h1>Welcome to <span class="text-gradient">Astro</span></h1>
+    <h1 class="text-red">Kcfuler</h1>
     <p class="instructions">
       To get started, open the directory <code>src/pages</code> in your project.<br
       />
     </p>
-    <Hello client:visible />
+    <Button client:visible />
   </main>
 </Layout>
 
@@ -18,5 +18,8 @@ import Hello from "../components/Hello";
   .instructions {
     font-family: "Satoshi";
     font-size: 20px;
+  }
+  h1 {
+    font-family: "Satoshi";
   }
 </style>

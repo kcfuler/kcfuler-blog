@@ -6,7 +6,12 @@ export default function Hello() {
     <>
       <h1>Hello, world!</h1>
       <p>You clicked {count()} times</p>
-      <button onClick={() => setCount(count() + 1)}>Click me</button>
+      <button
+        class="b-bluegray b-2 rounded-2 hover-b-amber transition-all-300"
+        onClick={() => setCount(count() + 1)}
+      >
+        Click me
+      </button>
     </>
   );
 }
